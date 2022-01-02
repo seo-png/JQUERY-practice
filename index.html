@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탭 메뉴 콘텐츠 - 스타일 01 </title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+     
+    <div class="testimonial-section">
+        <h1><span>CodingWorks</span> Publishing Online Class with Inflearn</h1>
+        <div class="testimonial-pic">
+            <img class="active" src="./images/face 1.jpeg" data-alt="tap1">
+            <img src="./images/face 2.jpeg" data-alt="tap2">
+            <img src="./images/face 3.jpeg" data-alt="tap3">
+            <img src="./images/face 4.jpeg" data-alt="tap4">
+        </div>
+        <div class="testimonial">
+            <div class="content active" id="tap1">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Nemo eius voluptate id optio quaerat, obcaecati dolores, 
+                    numquam doloribus possimus provident dolore sed iure accusamus 
+                    ipsam accusantium recusandae explicabo natus sint voluptatum officiis 
+                    perspiciatis rerum doloremque necessitatibus. Molestias dolorem fugit 
+                    quis excepturi sunt exercitationem cum molestiae cumque maiores natus, 
+                    soluta officiis nisi laudantium vero mollitia expedita rerum consequuntur 
+                    tempora itaque inventore possimus iusto. Neque totam maxime illum reprehenderit 
+                    dignissimos sint officia perferendis placeat, soluta error officiis veniam iste 
+                    recusandae consequuntur molestiae!</p>
+                    <p>Amy, Grapic Designer</p>
+            </div>
+            <div class="content" id="tap2"> 
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Nemo eius voluptate id optio quaerat, obcaecati dolores, 
+                    numquam doloribus possimus provident dolore sed iure accusamus 
+                    ipsam accusantium recusandae explicabo natus sint voluptatum officiis 
+                    perspiciatis rerum doloremque necessitatibus. Molestias dolorem fugit 
+                    quis excepturi sunt exercitationem cum molestiae cumque maiores natus, 
+                    soluta officiis nisi laudantium vero mollitia expedita rerum consequuntur 
+                    tempora itaque inventore possimus iusto. Neque totam maxime illum reprehenderit 
+                    dignissimos sint officia perferendis placeat, soluta error officiis veniam iste 
+                    recusandae consequuntur molestiae!</p>
+                    <p>Amy, Grapic Designer</p>
+            </div>
+            <div class="content" id="tap3">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Nemo eius voluptate id optio quaerat, obcaecati dolores, 
+                    numquam doloribus possimus provident dolore sed iure accusamus 
+                    ipsam accusantium recusandae explicabo natus sint voluptatum officiis 
+                    perspiciatis rerum doloremque necessitatibus. Molestias dolorem fugit 
+                    quis excepturi sunt exercitationem cum molestiae cumque maiores natus, 
+                    soluta officiis nisi laudantium vero mollitia expedita rerum consequuntur 
+                    tempora itaque inventore possimus iusto. Neque totam maxime illum reprehenderit 
+                    dignissimos sint officia perferendis placeat, soluta error officiis veniam iste 
+                    recusandae consequuntur molestiae!</p>
+                    <p>Amy, Grapic Designer</p>
+            </div>
+            <div class="content" id="tap4">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Nemo eius voluptate id optio quaerat, obcaecati dolores, 
+                    numquam doloribus possimus provident dolore sed iure accusamus 
+                    ipsam accusantium recusandae explicabo natus sint voluptatum officiis 
+                    perspiciatis rerum doloremque necessitatibus. Molestias dolorem fugit 
+                    quis excepturi sunt exercitationem cum molestiae cumque maiores natus, 
+                    soluta officiis nisi laudantium vero mollitia expedita rerum consequuntur 
+                    tempora itaque inventore possimus iusto. Neque totam maxime illum reprehenderit 
+                    dignissimos sint officia perferendis placeat, soluta error officiis veniam iste 
+                    recusandae consequuntur molestiae!</p>
+                    <p>Amy, Grapic Designer</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $('.testimonial-pic img').click(function(){
+            $(this).addClass('active')
+            $(this).siblings().removeClass('active')
+
+            //$('.testimonial .content').removeClass('active')
+
+            $('#tab1').addClass('active')
+        })
+
+    </script>
+
+</body>
+</html>
