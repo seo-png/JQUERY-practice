@@ -7,7 +7,7 @@
     <title>탭 메뉴 콘텐츠 - 스타일 01 </title>
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="./style00.css"> 
 </head>
 <body>
      
@@ -21,7 +21,7 @@
         </div>
         <div class="testimonial">
             <div class="content active" id="tap1">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                <p>Nrem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Nemo eius voluptate id optio quaerat, obcaecati dolores, 
                     numquam doloribus possimus provident dolore sed iure accusamus 
                     ipsam accusantium recusandae explicabo natus sint voluptatum officiis 
@@ -31,7 +31,7 @@
                     tempora itaque inventore possimus iusto. Neque totam maxime illum reprehenderit 
                     dignissimos sint officia perferendis placeat, soluta error officiis veniam iste 
                     recusandae consequuntur molestiae!</p>
-                    <p>Amy, Grapic Designer</p>
+                    <p>Pmy, Grapic Designer</p>
             </div>
             <div class="content" id="tap2"> 
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
@@ -47,7 +47,7 @@
                     <p>Amy, Grapic Designer</p>
             </div>
             <div class="content" id="tap3">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                <p>Aorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Nemo eius voluptate id optio quaerat, obcaecati dolores, 
                     numquam doloribus possimus provident dolore sed iure accusamus 
                     ipsam accusantium recusandae explicabo natus sint voluptatum officiis 
@@ -57,10 +57,10 @@
                     tempora itaque inventore possimus iusto. Neque totam maxime illum reprehenderit 
                     dignissimos sint officia perferendis placeat, soluta error officiis veniam iste 
                     recusandae consequuntur molestiae!</p>
-                    <p>Amy, Grapic Designer</p>
+                    <p>Cmy, Grapic Designer</p>
             </div>
             <div class="content" id="tap4">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                <p>Borem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Nemo eius voluptate id optio quaerat, obcaecati dolores, 
                     numquam doloribus possimus provident dolore sed iure accusamus 
                     ipsam accusantium recusandae explicabo natus sint voluptatum officiis 
@@ -70,7 +70,7 @@
                     tempora itaque inventore possimus iusto. Neque totam maxime illum reprehenderit 
                     dignissimos sint officia perferendis placeat, soluta error officiis veniam iste 
                     recusandae consequuntur molestiae!</p>
-                    <p>Amy, Grapic Designer</p>
+                    <p>Bmy, Grapic Designer</p>
             </div>
         </div>
     </div>
@@ -81,9 +81,9 @@
             $(this).addClass('active')
             $(this).siblings().removeClass('active')
 
-            //$('.testimonial .content').removeClass('active')
-
-            $('#tab1').addClass('active')
+            $('.testimonial .content').removeClass('active')
+            $( '#' + $(this).attr('data-alt')).addClass('active')
+           
         })
 
     </script>
