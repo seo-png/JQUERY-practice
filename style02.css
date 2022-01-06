@@ -22,6 +22,10 @@ body {
     font-size: 18px;
     cursor: pointer;
 }
+.stars .material-icons.active {
+    color: yellow;
+    text-shadow: 0 0 5px yellow;
+}
 .print {
     color: #fff;
     margin-top: 3px;

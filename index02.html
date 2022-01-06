@@ -24,5 +24,16 @@
             별점을 주세요.
         </div>
     </div>
+
+    <script>
+        $('.stars .material-icons').click(function(){
+            $(this).addClass('active')
+            $(this).prevAll().addClass('active')
+            $(this).nextAll().removeClass('active')
+
+            var num = $(this).index()
+            // $('.print').text(num)
+        })
+    </script>
 </body>
 </html>
