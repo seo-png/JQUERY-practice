@@ -14,11 +14,11 @@
 <body>
     <section>
         <ul class="btn">
-            <li class="active">HTML5</li>
-            <li>CSS3</li>
-            <li>JQUERY</li>
-            <li>JAVASCRIPT</li>
-            <li>CSSFRAMEWORKS</li>
+            <li data-alt="tab1" class="active">HTML5</li>
+            <li data-alt="tab2">CSS3</li>
+            <li data-alt="tab3">JQUERY</li>
+            <li data-alt="tab4">JAVASCRIPT</li>
+            <li data-alt="tab5">CSSFRAMEWORKS</li>
         </ul>
         <div class="tabs">
             <div id="tab1" class="active">tab1</div>
@@ -28,5 +28,16 @@
             <div id="tab5">tab1</div>
         </div>
     </section>
+
+    <script>
+        $('.btn li').click(function (){
+            $(this).addClass('active')
+            $(this).siblings().removeClass('active')
+
+            var tab = $(this).attr('data-alt')
+            $('#tab1').addClass('active')
+        });
+    </script>
+
 </body>
 </html>
