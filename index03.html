@@ -20,21 +20,87 @@
         </div>
         <div class="tab-inner">
             <ul class="btn">
-                <li data-alt="tab1">HTML5</li>
+                <li data-alt="tab1" class="active">HTML5</li>
                 <li data-alt="tab2">CSS3</li>
                 <li data-alt="tab3">JQUERY</li>
                 <li data-alt="tab4">JAVASCRIPT</li>
                 <li data-alt="tab5">CSS FRAMEWORKS</li>
             </ul>
             <div class="tabs">
-                <div id="tab1">tab1</div>
-                <div id="tab2">tab2</div>
-                <div id="tab3">tab3</div>
-                <div id="tab4">tab4</div>
-                <div id="tab5">tab5</div>
+                <div id="tab1" class="active">
+                    <h2>HTML5</h2>
+                    <img src="./images/html5.png">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatem? 
+                        Excepturi dicta ad nisi eaque neque repellat aliquam ab, tempore dolores laborum fugiat 
+                        maxime expedita et quia, soluta non saepe natus ipsam omnis adipisci reprehenderit, iste 
+                        tempora accusamus. Eligendi labore porro fugiat ipsam nam officia, magnam aut ipsa repellat, 
+                        officiis obcaecati necessitatibus culpa ullam dolor. Facilis quisquam natus asperiores officia 
+                        qui illum molestias cupiditate incidunt. Voluptatum rem provident similique et.
+                    </p>
+                </div>
+                <div id="tab2">
+                    <h2>CSS3</h2>
+                    <img src="./images/css3.png">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatem? 
+                        Excepturi dicta ad nisi eaque neque repellat aliquam ab, tempore dolores laborum fugiat 
+                        maxime expedita et quia, soluta non saepe natus ipsam omnis adipisci reprehenderit, iste 
+                        tempora accusamus. Eligendi labore porro fugiat ipsam nam officia, magnam aut ipsa repellat, 
+                        officiis obcaecati necessitatibus culpa ullam dolor. Facilis quisquam natus asperiores officia 
+                        qui illum molestias cupiditate incidunt. Voluptatum rem provident similique et.
+                    </p>
+                </div>
+                <div id="tab3">
+                    <h2>JQUERY</h2>
+                    <img src="./images/jquery.png">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatem? 
+                        Excepturi dicta ad nisi eaque neque repellat aliquam ab, tempore dolores laborum fugiat 
+                        maxime expedita et quia, soluta non saepe natus ipsam omnis adipisci reprehenderit, iste 
+                        tempora accusamus. Eligendi labore porro fugiat ipsam nam officia, magnam aut ipsa repellat, 
+                        officiis obcaecati necessitatibus culpa ullam dolor. Facilis quisquam natus asperiores officia 
+                        qui illum molestias cupiditate incidunt. Voluptatum rem provident similique et.
+                    </p>
+                </div>
+                <div id="tab4">
+                    <h2>JAVASCRIPT</h2>
+                    <img src="./images/javascript.jpg">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatem? 
+                        Excepturi dicta ad nisi eaque neque repellat aliquam ab, tempore dolores laborum fugiat 
+                        maxime expedita et quia, soluta non saepe natus ipsam omnis adipisci reprehenderit, iste 
+                        tempora accusamus. Eligendi labore porro fugiat ipsam nam officia, magnam aut ipsa repellat, 
+                        officiis obcaecati necessitatibus culpa ullam dolor. Facilis quisquam natus asperiores officia 
+                        qui illum molestias cupiditate incidunt. Voluptatum rem provident similique et.
+                    </p>
+                </div>
+                <div id="tab5">
+                    <h2>CSS FRAMEWORKS</h2>
+                    <img src="./images/css framework.png">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatem? 
+                        Excepturi dicta ad nisi eaque neque repellat aliquam ab, tempore dolores laborum fugiat 
+                        maxime expedita et quia, soluta non saepe natus ipsam omnis adipisci reprehenderit, iste 
+                        tempora accusamus. Eligendi labore porro fugiat ipsam nam officia, magnam aut ipsa repellat, 
+                        officiis obcaecati necessitatibus culpa ullam dolor. Facilis quisquam natus asperiores officia 
+                        qui illum molestias cupiditate incidunt. Voluptatum rem provident similique et.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+
+    <script>
+        $('.btn li').click(function() {
+            $(this).addClass('active')
+            $(this).siblings().removeClass('active')
+
+            var result = $(this).attr('data-alt')
+            $('.tabs div').removeClass('active')
+            $('#' + result).addClass('active')
+        })
+    </script>
 
 </body>
 </html>
