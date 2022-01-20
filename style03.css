@@ -82,3 +82,32 @@ section {
 .tabs div p {
     overflow: hidden;
 }
+
+/* Heading */
+.heading {
+
+}
+
+.heading h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.heading h1 span {
+    color: crimson;
+}
+
+.heading input[type=text] {
+    background-color: #fff;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ddd;
+}
+
+.heading input[type=text]::placeholder {
+    font-style: italic;
+}
+
