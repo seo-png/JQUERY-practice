@@ -105,9 +105,15 @@ section {
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid #ddd;
+
 }
 
 .heading input[type=text]::placeholder {
     font-style: italic;
+    transition: .3s;
 }
 
+.heading input[type=text]:focus::placeholder {
+    /* visibility: hidden; */
+    opacity: 0;
+}
