@@ -18,7 +18,7 @@
             <li data-image="images/bg-photo\ 1.jpeg">
                 <a href="#none" data-text="ABOUT">ABOUT</a>
             </li>
-            <li data-image="images/bg-photo\ 2.jpeg">
+            <li data-image="images/bg-photo\ 2.png">
                 <a href="#none" data-text="INSTRUCTOR">INSTRUCTOR</a>
             </li>
             <li data-image="images/bg-photo\ 3.jpeg">
@@ -30,5 +30,19 @@
         </ul>
         <div class="photo"></div>
     </div>
+
+    <script>
+        $('.navi li').mouseenter(function() {
+            var changeImage = $(this).attr('data-image')
+            $('.photo').css({
+                'background-image':'url('+ changeImage +')'
+            })
+        })
+        $('.navi li').mouseleave(function() {
+            $('.photo').css({
+                'background-image': ''
+            })
+        })
+    </script>
 </body>
 </html>
