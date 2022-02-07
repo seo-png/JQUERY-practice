@@ -31,11 +31,38 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
     position: absolute;
     width: 100%;
-    bottom: -160px;
+    /* bottom: -160px; */
+    bottom: 0;
     left: 0;
     height: 50%;
     transition: 0.5s;
+    padding: 5px 20px;
+    box-sizing: border-box;
 }
 .item:hover .detail {
     bottom: 0;
+}
+
+/* title */
+.title {
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+.title h2 {
+    font-size: 16px;
+    color: #888;
+    line-height: 1.2em;
+    float: left;
+}
+.title h2 em {
+    font-style: normal;
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+.title span {
+    float: right;
+    margin-top: 15px;
+    font-size: 18px;
+    color: crimson;
 }
